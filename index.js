@@ -1,0 +1,1 @@
+module.exports.subscene = require('./src/subscene');
