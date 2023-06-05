@@ -96,6 +96,10 @@ Example output:
 
 Or you can use `getSubtitleByImdbId()` function to get the list of subtitle (but slower):
 
+> Note: This function accepts `TMDB API Key` NOT `IMDb`! You can get a key from official [themoviedb.org](https://themoviedb.org) website.
+>
+> Because the function makes a lot of request, it become slower, depend on your connection.
+
 ```javascript
 const apiKey = "Your_TMDB_API_KEY..."; // TMDB API KEY
 

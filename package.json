@@ -1,6 +1,6 @@
 {
   "name": "node-subtitle-tools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A package for fetching and editing subtitles from subscene.com",
   "main": "index.js",
   "scripts": {
