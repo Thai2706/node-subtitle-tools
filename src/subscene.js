@@ -1,4 +1,3 @@
-require('dotenv').config();
 const got = require('got-scraping').gotScraping;
 const cheerio = require('cheerio');
 var AdmZip = require("adm-zip");
