@@ -215,7 +215,7 @@ async function downloadSubtitle(path, options) {
   });
 
   if (response.statusCode === 200) {
-    if (options.unzip) {
+    if (options?.unzip) {
       let answer = [];
 
       const zip = new AdmZip(response.body);
@@ -228,7 +228,7 @@ async function downloadSubtitle(path, options) {
           });
         }
       });
-      if (!options.convert) {
+      if (!options?.convert) {
         return answer;
       } else {
         for (let i = 0; i < answer.length; i++) {
