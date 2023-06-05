@@ -24,7 +24,6 @@ Example output:
   { "title": "Iron Man (2008)", "path": "/subtitles/iron-man" },
   { "title": "Iron Man (1994)", "path": "/subtitles/iron-man-1994-1" },
   { "title": "Iron Man (1966)", "path": "/subtitles/iron-man-1966" }
-  ...
 ]
 ```
 
@@ -35,8 +34,8 @@ const details = await subscene.getTitleDetails(
   results[0].path, // path from results
   true, // Including subtitles
   {
-    language: ["en"], // language options
-    //rate: ['positive'] // rating options, 'positive' | 'neutral' | 'bad'
+    language: ["en"], // language options, all if omitted
+    //rate: ['positive'] // rating options, 'positive' | 'neutral' | 'bad', all if omitted,
   }
 );
 console.log(details);
@@ -66,7 +65,6 @@ Example output:
         "path": "/subtitles/iron-man/english/1359171",
         "rate": "positive"
       }
-      ...
     ]
   }
 }
@@ -132,7 +130,6 @@ Example output:
       "path": "/subtitles/avengersendgame/english/2052451",
       "rate": "positive"
     },
-    ...
     ]
 }
 ```
